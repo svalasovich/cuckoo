@@ -1,4 +1,4 @@
-module github.com/AidosKuneen/cuckoo
+module github.com/svalasovich/cuckoo
 
 go 1.15
 

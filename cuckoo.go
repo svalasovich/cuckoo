@@ -25,7 +25,7 @@ import (
 )
 
 const (
-	edgebits = 24
+	edgebits = 18
 	//ProofSize is the number of nonces and cycles
 	ProofSize = 20
 	nedge     = 1 << edgebits
@@ -35,7 +35,7 @@ const (
 	maxpath   = 8192
 )
 
-//Verify verifiex cockoo nonces.
+// Verify verifiex cockoo nonces.
 func Verify(sipkey []byte, nonces []uint32) error {
 	sip := newsip(sipkey)
 	var uvs [2 * ProofSize]uint32
